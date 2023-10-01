@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+main {
+    margin-top: 430px;
+    width: 100%;
+}
+.section-p1 {
+    padding: 40px 80px;
+}
+
+/* navagation*/
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    padding: 20px;
+    z-index: 1;
+}
+.navbar {
+    display: flex;
+    
+}
+.logo {
+    justify-content: center;
+    display: flex;
+    align-items: left;
+    height: 20px;
+
+}
+
+.nav-list > a {
+    
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0,5s;
+    width: 80%;
+}
+.nav-list > a:hover {
+    color: #fff;
+    border-bottom:   solid #6a3434;
+}
+
+/* header Layout */
+header{
+    
+    height: 300px;
+   
+}
+
+/* BG-header to lower de z-index to -1 
+    and show absolute with text-header */
+.img-header {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
+    height: 750px;
+
+    
+}
+/* Organizing the text head lo left in column*/
+.text-header{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 15px;
+    padding: 25px;
+}
+/* Paragraph one and two, h1, h4 , span plus button from header*/
+.p1 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    padding: 10px;
+    
+    
+}
+.p2{
+    font-size: 20px;
+    font-style: italic;
+    text-align: left; 
+    padding: 15px; 
+}
+
+
+.text-header > h1 {
+    margin-top: 170px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    padding: 5px;
+    color: #080808;
+}
+.text-header> h4 {
+    padding-left: 10px;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.text-header> h4 > span {
+    padding: 10px;
+    font-size: 40px;
+    font-style: italic;
+    color: red;
+    
+}
+
+.button-header {
+    background: url(imgs/button.png);
+    background-repeat: no-repeat;
+    padding: 14px 80px 14px 65px;
+    margin-left: 10px;
+    margin-top:30px;
+}
+.button-header a {
+    text-decoration: none;
+    cursor: pointer;
+    color: red;
+}
+.button-header a:hover{
+    color: #088178;
+}
+/*Statistics layout flex and elements */
+#stats{
+    display: flex;
+    background-color: rgba(4,69,125,255);
+    padding: 25px 10px 25px 10px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+#stats > div {
+    margin: 0 25px 0 25px ;
+
+}
+#stats > div> p {
+    color: #f0e3e3aa;
+    font-size: 18px;
+}
+/* Features flex - box, h6, hover and images design*/
+#features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+#features > .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px solid #cce7cc;
+    border-radius: 4px;
+    margin: 10px 1px;
+}
+#features > .fe-box:hover{
+    box-shadow: 10px 10px 34px rgba(70, 62, 221, 0.1);;
+}
+#features > .fe-box > h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    color: #088178;
+    background-color: #fddde4;
+
+}
+/* Here i accessed the element 2 forward*/
+#features .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+
+}
+#features .fe-box:nth-child(3) h6{
+    background-color: #d1e8f2;
+
+}
+#features .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+
+}
+#features .fe-box:nth-child(5) h6{
+    background-color: #f6bdf6;
+
+}
+#features > .fe-box > img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* products container*/
+#products-list {
+    margin: 30px;
+    text-align: center;
+}
+/*Items-container  and item*/
+.items-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+} 
+.item {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border-radius: 25px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    position: relative;
+    margin: 15px 0;
+    transition: 0.2 ease;
+}
+
+.item:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+.item > img {
+    width: 100%;
+    border-radius: 20px;
+}
+.item > .description {
+    text-align: start;
+    padding: 10px 0;
+}
+.item > .description > span {
+    color: #606063;
+    font-size: 12px;
+}
+.item > .description > h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+.item > .description > a > i {
+    font-size: 20px;
+    padding-left: 7px;
+    color: rgb(243,181,25);
+    
+}
+.item > .description h4>{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+.item > .description > a > .cart {
+    width: 40px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+.item > .description > a >  .cart:hover{
+    cursor: pointer;
+}
+/*Contact-us header*/
+
+.contact-header{
+    border-radius: 9px;
+    background-image: url("imgs/contact.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin: 30px;
+    padding: 8px;
+
+}
+
+.contact-header> h1{
+    font-size: 90px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.contact-header >p{
+    color: #1a1a1a;
+    padding-top: 0;
+    font-size: 20px;
+    text-align: center;
+    
+}
+/* contact page connector/contact-container holders*/
+
+.connect {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    
+
+
+
+}
+.contact-container {
+    display: flex;
+    padding: 15px 10px 15px;
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 65%;
+    margin: 30px;
+
+}
+
+.img-contact-form > img {
+    height: 100%;
+    width: 100%;
+    
+    padding: 0 15px 0 15px;
+
+}
+.contact-container > .contact-form {
+    padding: 50px;
+    background-image: url("imgs/blog/b6.jpg");
+    width: 550px;
+
+    border-radius: 10px;
+
+
+}
+
+
+.contact> input {
+    width: 350px;
+    height: 28px;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+    border-radius: 1px;
+
+
+}
+.contact > h1{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(11, 16, 37, 0.814);
+}
+.contact > h4{
+    font-size: 12px;
+}
+
+.contact> .submit {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.submit >button {
+    padding:  7px 10px 7px 10px;
+    background-color: #cce7cc;
+    border-radius: 3px;
+    font-size: 15px;
+    transition: 0,5s;
+
+}
+.submit >button:hover{
+    background-color: #088178;
+
+}
+.check-box-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 12px;
+
+    
+}
+
+/*Footer items*/
+footer{
+    background: rgba(187,217,255,255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer > .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 25px;
+}
+footer > .logo1{
+    margin-bottom: 20px;
+}
+footer > .col > h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer > .col > p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer > .col > a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer > .col> .icon >i{
+    color: #465b52;
+    padding-right: 10px;
+    cursor: pointer;
+
+
+}
+footer > .install> .row >img{
+    border: 1px solid #088178;
+}
+footer > .install> img{
+    margin: 10px 0 10px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width: 650px) {
+    .navbar{
+        justify-content: center;
+    }
+    header{
+        
+        width: 100%;
+    }
+    .p1{
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .p2{
+        font-size: 14px;
+    }
+    .items-container{
+        align-items: center;
+        flex-direction: column;
+    }
+    #features{
+        flex-direction: column;
+    }
+    #stats{
+        flex-direction: row;
+        width: 100%;
+    }
+    #stats > div> p {
+        
+        font-size: 12px;
+    }
+    .text-header{
+        width: 100%;
+    }
+    .button-header{
+        margin-top: 10px;
+    }
+    .connect{
+        width: 100%;
+    }
+    .contact-header img{
+        width: 400px;
+    }
+    .contact-container {
+        width: 100%;
+    }
+    .contact-container img{
+        display: none;
+    }
+    .text-header > h4{
+        font-size: 24px;
+    }
+    
+    footer{
+        width: 100%;
+
+    }
+}
